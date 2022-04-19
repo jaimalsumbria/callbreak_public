@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="@dimen/outer_layout_padding">
+
+    <RelativeLayout
+        android:id="@+id/scrollViewLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/box_margins"
+            android:background="@drawable/background_box">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/box_margins"
+                android:background="@drawable/background_box_3"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal">
+
+                <Button
+                    android:id="@+id/btnVisitHomeSite"
+                    style="@color/AliceBlue"
+                    android:layout_width="125dip"
+                    android:layout_height="70dip"
+                    android:background="@drawable/mb1_14"
+                    android:text="Learn game development"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/btnPrivacyPolicy"
+                    style="@color/AliceBlue"
+                    android:layout_width="125dip"
+                    android:layout_height="55dip"
+                    android:layout_below="@+id/btnVisitHomeSite"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mb1_14"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/settingsCloseBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_gravity="top|right"
+            android:background="@drawable/cross_btn" />
+    </RelativeLayout>
+
+</RelativeLayout>

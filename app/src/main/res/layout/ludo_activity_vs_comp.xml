@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme_2"
+    android:id="@+id/compActLayout"
+    tools:context="com.waterbird.callbreak.LudoVsCompActivity" >
+
+    <com.waterbird.callbreak.LudoVsCompView
+        android:id="@+id/LudoVsCompView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+ />
+
+
+</RelativeLayout>

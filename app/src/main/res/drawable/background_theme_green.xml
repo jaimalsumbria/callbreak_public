@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/snklad_bgd_9" />
+    <item ><shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <gradient
+            android:angle="360"
+            android:centerX="50%"
+            android:centerY="50%"
+
+            android:gradientRadius="100%p"
+            android:endColor="#E9004D40"
+            android:centerColor="#D31B5E20"
+            android:startColor="#D733691E"
+            android:type="radial">
+        </gradient>
+
+        <!-- Specify the margins that all content inside the drawable must adhere to -->
+        <padding
+            android:left="1dp"
+            android:right="1dp"
+            android:top="1dp"
+            android:bottom="1dp" />
+
+        <corners android:bottomRightRadius="@dimen/corners"
+            android:bottomLeftRadius="@dimen/corners"
+            android:topLeftRadius="@dimen/corners"
+            android:topRightRadius="@dimen/corners"/>
+
+
+    </shape>
+    </item>
+</layer-list>

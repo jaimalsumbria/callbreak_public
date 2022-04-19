@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:angle="90"
+        android:startColor="#aaddddff"
+        android:endColor="#aad3d3fc"
+        android:type="linear" />
+
+    <!-- Specify the margins that all content inside the drawable must adhere to -->
+    <padding
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp"
+        android:bottom="2dp" />
+
+    <corners android:bottomRightRadius="@dimen/corners"
+        android:bottomLeftRadius="@dimen/corners"
+        android:topLeftRadius="@dimen/corners"
+        android:topRightRadius="@dimen/corners"/>
+</shape>  
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_box"
+    android:padding="10px">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to Exit?"
+        android:textColor="#fff"
+        android:textSize="25dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_table_exit2">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/table_row_exit2">
+
+            <Button
+                android:id="@+id/yesPopupBtn"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/mb1_14_3"
+                android:text="Yes"
+                android:textSize="@dimen/small_text_size" />
+
+            <Button
+                android:id="@+id/noPopupBtn"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/mb1_14_3"
+                android:text="No"
+                android:textSize="@dimen/small_text_size" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

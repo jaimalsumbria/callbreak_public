@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="ludo_activity_horizontal_margin">4dp</dimen>
+    <dimen name="ludo_activity_vertical_margin">2dp</dimen>
+	
+	<dimen name="snk_lad_number_size">12sp</dimen>
+	<dimen name="snk_lad_stroke_width">1dp</dimen>
+	
+	<dimen name="ludo_rank_size">28sp</dimen>
+	<dimen name="ludo_rank_stroke_width">3dp</dimen>
+	
+	<dimen name="ludo_game_over_size">10sp</dimen>
+	<dimen name="ludo_game_over_width">1dp</dimen>
+
+    <dimen name="super_large_text_size">28sp</dimen>
+    <dimen name="large_text_size">22sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="small_text_size">13sp</dimen>
+
+    <dimen name="highscore_medal_size">30dp</dimen>
+	<dimen name="corners">8dp</dimen>
+    <dimen name="cell_corners">2dp</dimen>
+
+    <dimen name="box_margins">5dp</dimen>
+    <dimen name="outer_layout_padding">5dp</dimen>
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
+</resources>
