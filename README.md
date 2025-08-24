@@ -8,4 +8,4 @@ Multiplayer version doesn't work.
 
 You can download the latest APK here:
 
-[⬇️ Download Callbreak](https://github.com/jaimalsumbria/callbreak_public/blob/main/app/release/app-release.apk)
+[⬇️ Download Callbreak](https://github.com/jaimalsumbria/callbreak_public/raw/main/app/release/app-release.apk)
