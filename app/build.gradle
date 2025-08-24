@@ -1,38 +1,32 @@
-apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    namespace "com.waterbird.callbreak"
+    compileSdk 34  // 36 is preview, use 34 (stable)
 
     defaultConfig {
         applicationId "com.waterbird.callbreak"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdk 24
+        targetSdk 34
         multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
         release {
-            debuggable false
             minifyEnabled true
             shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    implementation 'com.google.android.gms:play-services-ads:18.3.0'
-    // Firebase Authentication
-    //implementation 'com.google.firebase:firebase-core:16.0.6'
-    //implementation 'com.google.firebase:firebase-auth:16.1.0'
+    // Latest versions (2025 safe)
+    implementation 'com.google.android.gms:play-services-ads:24.5.0'
+    implementation 'com.google.android.gms:play-services-auth:21.4.0'
 
-    // Google Sign In SDK (only required for Google Sign In)
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
-
-    // Google Sign In SDK (only required for Google Sign In)
-    implementation 'com.google.android.gms:play-services-auth:17.0.0'
-    implementation 'com.google.firebase:firebase-database:19.2.0'
-    implementation 'com.google.firebase:firebase-firestore:21.3.1'
 }

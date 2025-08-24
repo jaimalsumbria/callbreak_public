@@ -5,7 +5,6 @@ import android.app.Activity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.waterbird.callbreak.R;
 
 import android.app.Application;
@@ -47,8 +46,4 @@ public class Tools {
         view.loadAd(new AdRequest.Builder().build());
     }
 
-  public static InterstitialAd decoratePf(Activity activity, InterstitialAd mInterstitialAd){
-      mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        return mInterstitialAd;
-    }
 }

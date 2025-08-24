@@ -26,7 +26,6 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.waterbird.callbreak.R;
 
 import java.util.ArrayList;
@@ -48,7 +47,7 @@ public class LudoVsCompActivity extends Activity {
     private Button closePopupBtn;
     private PopupWindow popupWindow;
     private RelativeLayout linearLayout1;
-	private InterstitialAd mInterstitialAd;
+
     protected Activity activity;
 
 	/** Called when the activity is first created. */
@@ -63,9 +62,6 @@ public class LudoVsCompActivity extends Activity {
 		setContentView(R.layout.ludo_activity_vs_comp);
 		play = true;
 		Tools.init(this);
-		mInterstitialAd = new InterstitialAd(this);
-		mInterstitialAd.setAdUnitId("ca-app-pub-8796345110437201/6723586648");
-		mInterstitialAd = Tools.decoratePf(this, mInterstitialAd);
 		//Tools.decorateRnb(this, adView);
 
         linearLayout1 = findViewById(R.id.compActLayout);
@@ -410,9 +406,7 @@ public class LudoVsCompActivity extends Activity {
 
         StaticVariables.soundUtil.playSound(StaticVariables.BTN_CLICK, 1, false);
         finish();
-	    		if (mInterstitialAd.isLoaded()) {
-	                mInterstitialAd.show();
-	            }
+
     }
 
 }

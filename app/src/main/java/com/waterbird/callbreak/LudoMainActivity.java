@@ -21,7 +21,6 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.waterbird.callbreak.R;
 
 import java.util.ArrayList;
@@ -35,7 +34,7 @@ public class LudoMainActivity extends Activity {
     private ImageButton themeChange;
     private PopupWindow popupWindow;
     private RelativeLayout layoutLudoMain;
-    private InterstitialAd mInterstitialAd;
+
     protected Activity activity;
     private SharedPreferences sp;
     private SharedPreferences.Editor spEditor;
@@ -71,10 +70,6 @@ public class LudoMainActivity extends Activity {
 
         }
 
-        Tools.init(this);
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-8796345110437201/6723586648");
-        mInterstitialAd = Tools.decoratePf(this, mInterstitialAd);
 
         AdView adView = this.findViewById(R.id.adView);
         Tools.decorateRnb(this, adView);
